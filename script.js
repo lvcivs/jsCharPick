@@ -46,6 +46,7 @@ function initPage() {
 		var textnode = document.createTextNode(chars[k]);
 		node.appendChild(textnode);
 		node.className = "charButton";
+		node.type = "button";
 		node.onclick = function(event) {
 			pasteChar(event.target.innerHTML);
 		}
